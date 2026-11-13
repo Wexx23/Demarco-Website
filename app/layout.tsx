@@ -29,12 +29,7 @@ const inter = Inter({
   axes: ["opsz"],
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  process.env.URL ?? // Netlify
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL // Vercel (hostname only)
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000");
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://demarco.rs";
 const description =
   "Domaći roštilj, ćevapi i pljeskavice po porodičnim receptima. Ančiki, Tome Kostića bb — besplatna dostava na kućnu adresu u Leskovcu.";
 
