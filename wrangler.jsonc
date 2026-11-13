@@ -1,0 +1,10 @@
+// Cloudflare podešavanje: sajt je statičan, služi se iz foldera `out`
+// koji pravi `npm run build`.
+{
+  "name": "demarco-website",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
